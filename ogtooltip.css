@@ -1,0 +1,54 @@
+.tooltip{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+
+visibility: hidden;
+position: relative;
+bottom: 40px;
+right: 160px;
+
+background-color: rgb(90, 90, 90);
+color: white;
+border-radius: 5px;
+font-size: 15px;
+padding: 5px;
+font-style: italic;
+opacity: 1;
+transition: opacity .4s;
+
+
+}
+
+.tooltip .tooltiptext::before
+{
+   position: absolute;
+   content: "";
+   
+   top: 100%;
+   left: 45%;
+   /* margin: 5px; */
+   border-width: 8px;
+   border-style: solid;
+   border-color: rgb(90, 90, 90) transparent transparent transparent ;
+
+
+}
+
+.tooltip:hover .tooltiptext {
+
+    visibility: visible;
+    
+
+}
+
+.sidecontent {
+    display: flex;
+}

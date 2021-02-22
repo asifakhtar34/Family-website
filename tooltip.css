@@ -1,0 +1,135 @@
+
+.sidecontent  {
+    
+    position: absolute;
+    left: 275px;
+    top: 80px;
+    display: inline-block;
+    width:auto;
+    
+
+    
+    
+    
+}
+
+.sidecontentitems {
+
+    
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:space-around;
+    
+    justify-content:center;
+    overflow: hidden;
+    /* border: 5px solid black; */
+    
+    
+}
+
+ .sidecontentitems li{
+    /* border: 2px solid black; */
+    padding: 5px;
+    margin: 10px 50px;
+    width: 250px;
+     list-style: none;
+     /* border: 2px solid red; */
+     border-radius: 10px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(241,191,116,.7);
+     cursor: pointer;
+
+}
+
+.tooltip p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-weight: bolder;
+    color:#3155B1;
+    /* border: 2px solid black; */
+}
+
+.sidecontent img {
+    border-radius: 50%;
+    /* border: 2px solid black; */
+}
+
+
+.tooltip{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* cursor: pointer; */
+    
+}
+
+ .tooltiptext {
+
+    visibility: hidden;
+    position: relative;
+    top: 15px;
+    right: -50px;
+    
+    background-color: rgb(90, 90, 90);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    font-style: italic;
+    opacity: 1;
+    transition: opacity .4s;
+    
+    
+    }
+
+    
+.tooltip .tooltiptext::after       
+{
+   position: absolute;
+   content: "";
+   
+   bottom: 100%;
+   left: 45%;
+   /* margin: 5px; */
+   border-width: 8px;
+   border-style: solid;
+   border-color:  transparent transparent rgb(90, 90, 90) transparent ;
+
+
+}
+
+.tooltip:hover .tooltiptext {
+
+    visibility: visible;
+    
+
+}
+
+.intro {
+     position: relative;
+    z-index: 900;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     top:0px;
+     left:0px;
+     font-size: 80px;
+     text-align: center;
+     text-transform: uppercase;
+     color: rgba(24, 23, 46, .8);
+     font-family: 'Lemonada', cursive;
+     font-family: 'Potta One', cursive;
+     /* border: 2px solid black; */
+     line-height:1.5;
+     
+
+
+}
+
+
+
